@@ -1,0 +1,147 @@
+/* CSS global */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 60%;
+}
+body, button{
+    width: 100vw;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: #303030;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.title {
+    font-size: 10rem;
+}
+
+.title-section {
+    font-size: 5rem;
+    border-bottom: 5px solid #7BFF90;
+    padding-bottom: 0.5rem;
+}
+
+.paragrafo {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    color: #d6d6d6;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botões */
+
+.button-outline {
+    padding: 1.2rem 9rem;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+/* Header */ 
+
+.navbar {
+    height: 10vh;
+    border-bottom: 2px solid #424242;
+}
+.navbar-links{
+    scroll-margin-top: 72px;
+}
+.navbar .navbar-links a {
+    margin-left: 5rem;
+    transition: 200ms;
+}
+.navbar .navbar-links a:hover{
+
+    border-bottom: 2px solid #7BFF90;
+}
+/* Página principal */
+
+.hero-content{
+    height: 90vh;
+    width: 100vw;
+}
+.hero-image {
+    width: 50%;
+    text-align: center;
+}
+.hero-image img{
+    width: 100%;
+    max-width: 450px;
+}
+
+.hero-text {
+    width: 50%;
+    flex-direction: column;
+}
+
+.hero-text p{
+    font-size: 3rem;
+}
+
+/* Sobre */
+.about-content {
+    height: 70vh;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.vagas-content {
+    padding: 5rem 0;
+    flex-direction: column;
+}
+
+.vagas-content .vagas-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    border: 1px solid #424242
+}
+
+.vagas-content .vagas-card .fas{
+ font-size: 6rem;
+}
+
+.contato-content {
+    padding: 10rem 0;
+    flex-direction: column;
+}
+
+.contato-content .icons {
+    font-size: 5rem;
+}
+
+.contato-content .icons .fas, .fab{
+    padding: 1rem 3rem;
+    transition: 200ms;
+}
+
+.contato-content .icons .fas:hover, .fab:hover{
+    transition: 200ms;
+    font-size: 7rem;
+    color: #7BFF90 ;
+}
+
+@media (min-width: 700px){
+    :root{
+        font-size: 75%;
+    }
+
+}
